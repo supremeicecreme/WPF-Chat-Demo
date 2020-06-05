@@ -5,16 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFDemo"
         mc:Ignorable="d"
-        Title="Chat app" Height="400" Width="600">
+        Title="Chat app" Height="400" Width="600" Background="#FF875DF5">
     <StackPanel Margin="5">
-        <ListBox x:Name="messageHistoryBox" Margin="2" Height="305" ItemsSource="{Binding}"/>
+        <ListBox x:Name="messageHistoryBox" Margin="2" Height="305" ItemsSource="{Binding}" Background="WhiteSmoke"/>
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="4*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <TextBox x:Name="messageBox" Grid.Column="0" Height="40" Margin="2" TextWrapping="Wrap"></TextBox>
-            <Button x:Name="sendButton" Grid.Column="1" Height="40" Margin="2" Content="Send" IsDefault="True" Click="sendButton_Click"></Button>
+            <TextBox x:Name="messageBox" Grid.Column="0" Height="40" Margin="2" TextWrapping="Wrap" Background="#FFDADADA"></TextBox>
+            <Button x:Name="sendButton" Grid.Column="1" Height="40" Margin="2" Content="Send" IsDefault="True" Click="sendButton_Click" Background="#FF3DFD34"></Button>
         </Grid>
     </StackPanel>
 </Window>
